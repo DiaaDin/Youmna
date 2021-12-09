@@ -350,6 +350,11 @@ header .container .fa-times {
   background: #daddfc;
 }
 
+.intership .wave {
+  position: absolute;
+  bottom: -2px;
+}
+
 .intership h2 {
   text-align: center;
   font-size: 3rem;
@@ -500,11 +505,6 @@ header .container .fa-times {
 .intership .content_ul li {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.intership .wave {
-  position: absolute;
-  bottom: -2px;
 }
 
 .extracurricular {
