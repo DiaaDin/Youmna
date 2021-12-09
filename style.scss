@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 10rem;
+  overflow-x: hidden;
+}
+
+$maincolor: #daddfc;
+$seccolor: #2e4c6d;
+$lightbg: #305e96;
+
+.container {
+  padding: 2rem 9%;
+}
+
+body {
+  background: $seccolor;
+}
+
+//header
+
+header .fa-bars {
+  font-size: 2.5rem;
+  color: $seccolor;
+  cursor: pointer;
+}
+
+header .container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $maincolor;
+  z-index: 1000;
+
+  > a {
+    font-size: 2rem;
+    color: $seccolor;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: -200%;
+    height: 100vh;
+    width: 30%;
+    background: $seccolor;
+    box-shadow: -71px 0px 42px -1px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      a {
+        padding: 2rem;
+        font-size: 2rem;
+        position: relative;
+        display: inline-block;
+        font-weight: 500;
+        color: $maincolor;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  nav.toggle {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    height: 100vh;
+    width: 35%;
+  }
+  .fa-times {
+    transform: rotate(90deg);
+  }
+}
+.container.active {
+  box-shadow: -2px 7px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $maincolor;
+    width: 70%;
+    height: 65%;
+    border-radius: 15px;
+    color: $seccolor;
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.47);
+    padding: 0 0 2rem 0;
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      padding: 5rem 0 0 0;
+    }
+    h2 {
+      padding: 3rem 0;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        justify-content: space-between;
+        h4 {
+          margin-right: 5rem;
+          margin-bottom: 3rem;
+          font-size: 1.5rem;
+        }
+        span {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+//education
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    font-size: 3rem;
+    color: $maincolor;
+  }
+  .timeline {
+    margin: 1rem auto 15rem auto;
+    padding: 4rem;
+  }
+
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid $maincolor;
+  }
+
+  /* Card container */
+  .card {
+    margin: 0 0 20px 20px;
+    padding: 5rem;
+    background: $maincolor;
+    color: $lightbg;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Title of the card */
+  .title {
+    color: $seccolor;
+    position: relative;
+  }
+
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: $lightbg;
+    border-radius: 50%;
+    left: -7.8rem;
+    border: 3px solid $maincolor;
+  }
+  .wave {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -6px;
+  }
+}
+
+//experience
+
+.experience {
+  background: $maincolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: 3rem;
+    color: $seccolor;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background: $seccolor;
+    box-shadow: 0px 0px 17px 0px rgba(33, 73, 180, 0.47);
+    border-radius: 15px;
+    margin-bottom: 5rem;
+
+    .content {
+      .title {
+        text-align: center;
+        padding: 2rem;
+        h3 {
+          font-size: 2.5rem;
+          color: $maincolor;
+        }
+        .info {
+          span {
+            font-size: 1.3rem;
+            color: $maincolor;
+            margin-right: 2rem;
+          }
+        }
+      }
+      .roles {
+        li {
+          color: $maincolor;
+          font-size: 1.5rem;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+//intership
+
+.intership {
+  position: relative;
+  background: $maincolor;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $seccolor;
+    margin-bottom: 5rem;
+  }
+  .timeline {
+    max-width: 830px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 15px 0px;
+    margin-bottom: 15rem;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background-color: $seccolor;
+      height: 100%;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px 30px;
+      background-color: $seccolor;
+      border-radius: 5px;
+      position: relative;
+      width: 386px;
+      box-shadow: 0 2px 8px 0 rgba(33, 73, 180, 0.47);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: $seccolor;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: $seccolor;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 6;
+      }
+
+      &:nth-child(odd) {
+        margin-left: auto;
+        .content_tag {
+          right: 5px;
+        }
+
+        &::after {
+          left: -10px;
+        }
+        &::before {
+          top: 50%;
+          left: -39px;
+        }
+      }
+
+      &:nth-child(even) {
+        align-items: flex-end;
+        .content_p {
+          text-align: right;
+        }
+
+        &::after {
+          right: -10px;
+        }
+        &::before {
+          top: 50%;
+          right: -39px;
+        }
+        .content_tag {
+          left: 5px;
+        }
+      }
+    }
+  }
+
+  .content {
+    &_tag {
+      position: absolute;
+      top: 5px;
+      padding: 6px 10px;
+      background-color: $maincolor;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $seccolor;
+    }
+    &_date {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: $maincolor;
+    }
+    &_p {
+      color: $maincolor;
+      font-size: 1.3rem;
+      max-width: 230px;
+      margin-bottom: 20px;
+    }
+    &_ul {
+      color: $maincolor;
+      li {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .wave {
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+//extracurricular
+
+.extracurricular {
+  margin: 5rem 0;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $maincolor;
+    margin-bottom: 5rem;
+  }
+  .timeline {
+    margin: 20px auto;
+    padding: 0 0 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      position: relative;
+      width: 70rem;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        border: solid $maincolor;
+      }
+    }
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+  }
+
+  /* Setting the border of top, bottom, left */
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+
+  /* Setting the border of top, bottom, right */
+  .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+
+  /* Removing the border if it is the first card */
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+
+  /* Removing the border if it is the last card  and it's odd */
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* Removing the border if it is the last card  and it's even */
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    background: $maincolor;
+    color: $seccolor;
+    border-radius: 15px;
+    padding: 10px;
+    .title {
+      color: $seccolor;
+      font-size: 2rem;
+      position: relative;
+      padding: 1rem;
+    }
+    p {
+      color: $lightbg;
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+    ul {
+      color: $seccolor;
+      padding: 1.5rem;
+      li {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: $seccolor;
+    border-radius: 999px;
+    border: 3px solid $maincolor;
+  }
+
+  /* text right if the card is even  */
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+
+  /* setting dot to the left if the card is odd */
+  .card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+  }
+
+  /* setting dot to the right if the card is odd */
+  .card:nth-child(even) > .info > .title::before {
+    right: -45px;
+  }
+}
+
+//volunteering
+.volunteering {
+  background: $seccolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    font-size: 3rem;
+    color: $maincolor;
+    margin-bottom: 5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    width: 100%;
+    flex-wrap: wrap;
+    .content {
+      background: $maincolor;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 50rem;
+      min-height: 30rem;
+      padding: 5rem;
+      margin: 2rem;
+      border-radius: 15px;
+      .title {
+        text-align: center;
+        h3 {
+          margin-bottom: 2rem;
+          font-size: 2.5rem;
+          color: $seccolor;
+        }
+        .info {
+          margin-bottom: 2rem;
+          span {
+            font-size: 1.5rem;
+            color: $lightbg;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .roles {
+        li {
+          color: $seccolor;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .wave {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -6px;
+  }
+}
+
+// training
+
+.training {
+  background: $maincolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  h2 {
+    font-size: 3rem;
+    color: $seccolor;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+  .container {
+    .row {
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+
+    .main-timeline {
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .timeline {
+        width: calc(50% + 58px);
+        border-top: 2px solid $seccolor;
+        float: left;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          background: $seccolor;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          position: absolute;
+          top: -0.5rem;
+          right: 0;
+        }
+        .timeline-content {
+          color: $seccolor;
+          text-align: center;
+          padding: 15px 80px 15px 10px;
+          display: block;
+          position: relative;
+          ul {
+            padding: 1rem;
+            li {
+              color: $seccolor;
+            padding: .5rem;
+              font-size: 1.5rem;
+            }
+          }
+          &:before {
+            content: "";
+            background: $seccolor;
+            width: 15px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 50px;
+          }
+          .timeline-year {
+            font-size: 3rem;
+            line-height: 3rem;
+            font-weight: 700;
+            transform: translateY(-50%) rotate(90deg);
+            position: absolute;
+            top: 50%;
+            right: -5rem;
+          }
+
+          .title {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin: 0 0 8px;
+          }
+
+          .description {
+            font-size: 1.3rem;
+            color: $lightbg;
+            margin: 2rem;
+          }
+        }
+      }
+
+      .timeline {
+        &:nth-child(even) {
+          float: right;
+
+          &:before {
+            right: auto;
+            left: 0;
+          }
+
+          .timeline-content {
+            padding: 15px 10px 15px 80px;
+
+            &:before {
+              right: auto;
+              left: 51px;
+            }
+          }
+
+          .timeline-year {
+            right: auto;
+            left: -3.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//skills
+
+.skills{
+  background: $maincolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    font-size: 3rem;
+    color: $seccolor;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    .content {
+      background: $seccolor;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 50rem;
+      min-height: 30rem;
+      padding: 5rem;
+      margin: 2rem;
+      border-radius: 15px;
+      .title {
+        text-align: center;
+        h3 {
+          margin-bottom: 2rem;
+          font-size: 2.5rem;
+          color: $maincolor;
+        }
+      }
+      .roles {
+        li {
+          color: $maincolor;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  } 
+}
+
+//media queries
+
+@media (max-width: 991px) {
+  .intership {
+    .timeline {
+      gap: 15px;
+      padding: 10px;
+      &::after {
+        display: none;
+      }
+
+      &__content {
+        width: 100%;
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .extracurricular {
+    .timeline {
+      margin: 20px auto;
+      padding: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card {
+        position: relative;
+        width: 70rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  header .container nav.toggle {
+    height: 100vh;
+    width: 80vw;
+    ul a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .education {
+    .timeline {
+      margin: 4rem auto;
+      padding: 4rem;
+    }
+
+    /* Timeline dot  */
+    .title::before {
+      left: -9rem;
+    }
+  }
+
+  .experience {
+    background: $maincolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+      color: $seccolor;
+      margin-bottom: 5rem;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  .extracurricular {
+    .timeline {
+      margin: 20px auto;
+      padding: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card {
+        position: relative;
+        width: 60rem;
+      }
+    }
+  }
+
+  .volunteering {
+    .container {
+      .content {
+        background: $maincolor;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-width: 40rem;
+        min-height: 30rem;
+        padding: 5rem;
+        margin: 2rem;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .training {
+    .container {
+      .main-timeline {
+        .timeline {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  header nav.toggle {
+    top: 0;
+    right: 0%;
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .container {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .extracurricular {
+    .timeline {
+      margin: 20px auto;
+      padding: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card {
+        position: relative;
+        width: 42rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}

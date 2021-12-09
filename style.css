@@ -1,0 +1,1141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-padding-top: 10rem;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 2rem 9%;
+}
+
+body {
+  background: #2e4c6d;
+}
+
+header .fa-bars {
+  font-size: 2.5rem;
+  color: #2e4c6d;
+  cursor: pointer;
+}
+
+header .container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #daddfc;
+  z-index: 1000;
+}
+
+header .container > a {
+  font-size: 2rem;
+  color: #2e4c6d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header .container nav {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  height: 100vh;
+  width: 30%;
+  background: #2e4c6d;
+  -webkit-box-shadow: -71px 0px 42px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: -71px 0px 42px -1px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+header .container nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .container nav ul a {
+  padding: 2rem;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: #daddfc;
+}
+
+header .container nav ul a:hover {
+  opacity: 0.5;
+}
+
+header .container nav.toggle {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  height: 100vh;
+  width: 35%;
+}
+
+header .container .fa-times {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.container.active {
+  -webkit-box-shadow: -2px 7px 24px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: -2px 7px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #daddfc;
+  width: 70%;
+  height: 65%;
+  border-radius: 15px;
+  color: #2e4c6d;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.47);
+  padding: 0 0 2rem 0;
+}
+
+.about .container h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 5rem 0 0 0;
+}
+
+.about .container h2 {
+  padding: 3rem 0;
+}
+
+.about .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .container .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .container .info div h4 {
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.about .container .info div span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.education {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  /* Outer Layer with the timeline border */
+  /* Card container */
+  /* Information about the timeline */
+  /* Title of the card */
+  /* Timeline dot  */
+}
+
+.education h2 {
+  font-size: 3rem;
+  color: #daddfc;
+}
+
+.education .timeline {
+  margin: 1rem auto 15rem auto;
+  padding: 4rem;
+}
+
+.education .outer {
+  border-left: 2px solid #daddfc;
+}
+
+.education .card {
+  margin: 0 0 20px 20px;
+  padding: 5rem;
+  background: #daddfc;
+  color: #305e96;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.education .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.education .info h3 {
+  font-size: 2rem;
+}
+
+.education .info p {
+  font-size: 1.5rem;
+}
+
+.education .title {
+  color: #2e4c6d;
+  position: relative;
+}
+
+.education .title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #305e96;
+  border-radius: 50%;
+  left: -7.8rem;
+  border: 3px solid #daddfc;
+}
+
+.education .wave {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  bottom: -6px;
+}
+
+.experience {
+  background: #daddfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experience h2 {
+  font-size: 3rem;
+  color: #2e4c6d;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.experience .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 70%;
+  background: #2e4c6d;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(33, 73, 180, 0.47);
+          box-shadow: 0px 0px 17px 0px rgba(33, 73, 180, 0.47);
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+.experience .container .content .title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.experience .container .content .title h3 {
+  font-size: 2.5rem;
+  color: #daddfc;
+}
+
+.experience .container .content .title .info span {
+  font-size: 1.3rem;
+  color: #daddfc;
+  margin-right: 2rem;
+}
+
+.experience .container .content .roles li {
+  color: #daddfc;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.intership {
+  position: relative;
+  background: #daddfc;
+}
+
+.intership h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2e4c6d;
+  margin-bottom: 5rem;
+}
+
+.intership .timeline {
+  max-width: 830px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 15px 0px;
+  margin-bottom: 15rem;
+}
+
+.intership .timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #2e4c6d;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 5;
+}
+
+.intership .timeline__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 18px 30px;
+  background-color: #2e4c6d;
+  border-radius: 5px;
+  position: relative;
+  width: 386px;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(33, 73, 180, 0.47);
+          box-shadow: 0 2px 8px 0 rgba(33, 73, 180, 0.47);
+}
+
+.intership .timeline__content::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2e4c6d;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.intership .timeline__content::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2e4c6d;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 6;
+}
+
+.intership .timeline__content:nth-child(odd) {
+  margin-left: auto;
+}
+
+.intership .timeline__content:nth-child(odd) .content_tag {
+  right: 5px;
+}
+
+.intership .timeline__content:nth-child(odd)::after {
+  left: -10px;
+}
+
+.intership .timeline__content:nth-child(odd)::before {
+  top: 50%;
+  left: -39px;
+}
+
+.intership .timeline__content:nth-child(even) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.intership .timeline__content:nth-child(even) .content_p {
+  text-align: right;
+}
+
+.intership .timeline__content:nth-child(even)::after {
+  right: -10px;
+}
+
+.intership .timeline__content:nth-child(even)::before {
+  top: 50%;
+  right: -39px;
+}
+
+.intership .timeline__content:nth-child(even) .content_tag {
+  left: 5px;
+}
+
+.intership .content_tag {
+  position: absolute;
+  top: 5px;
+  padding: 6px 10px;
+  background-color: #daddfc;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2e4c6d;
+}
+
+.intership .content_date {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #daddfc;
+}
+
+.intership .content_p {
+  color: #daddfc;
+  font-size: 1.3rem;
+  max-width: 230px;
+  margin-bottom: 20px;
+}
+
+.intership .content_ul {
+  color: #daddfc;
+}
+
+.intership .content_ul li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intership .wave {
+  position: absolute;
+  bottom: -2px;
+}
+
+.extracurricular {
+  margin: 5rem 0;
+  /* Setting the border of top, bottom, left */
+  /* Setting the border of top, bottom, right */
+  /* Removing the border if it is the first card */
+  /* Removing the border if it is the last card  and it's odd */
+  /* Removing the border if it is the last card  and it's even */
+  /* Information about the timeline */
+  /* Timeline dot  */
+  /* text right if the card is even  */
+  /* setting dot to the left if the card is odd */
+  /* setting dot to the right if the card is odd */
+}
+
+.extracurricular h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #daddfc;
+  margin-bottom: 5rem;
+}
+
+.extracurricular .timeline {
+  margin: 20px auto;
+  padding: 0 0 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.extracurricular .timeline .card {
+  position: relative;
+  width: 70rem;
+}
+
+.extracurricular .timeline .card:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid #daddfc;
+}
+
+.extracurricular .timeline .card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+
+.extracurricular .timeline .card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+
+.extracurricular .card:nth-child(odd)::before {
+  left: 0px;
+  top: -5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+.extracurricular .card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.extracurricular .card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.extracurricular .card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+.extracurricular .card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+.extracurricular .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #daddfc;
+  color: #2e4c6d;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.extracurricular .info .title {
+  color: #2e4c6d;
+  font-size: 2rem;
+  position: relative;
+  padding: 1rem;
+}
+
+.extracurricular .info p {
+  color: #305e96;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.extracurricular .info ul {
+  color: #2e4c6d;
+  padding: 1.5rem;
+}
+
+.extracurricular .info ul li {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.extracurricular .title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #2e4c6d;
+  border-radius: 999px;
+  border: 3px solid #daddfc;
+}
+
+.extracurricular .card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+.extracurricular .card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+.extracurricular .card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
+.volunteering {
+  background: #2e4c6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.volunteering h2 {
+  font-size: 3rem;
+  color: #daddfc;
+  margin-bottom: 5rem;
+}
+
+.volunteering .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15rem;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.volunteering .container .content {
+  background: #daddfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50rem;
+  min-height: 30rem;
+  padding: 5rem;
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+.volunteering .container .content .title {
+  text-align: center;
+}
+
+.volunteering .container .content .title h3 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #2e4c6d;
+}
+
+.volunteering .container .content .title .info {
+  margin-bottom: 2rem;
+}
+
+.volunteering .container .content .title .info span {
+  font-size: 1.5rem;
+  color: #305e96;
+  margin-right: 1rem;
+}
+
+.volunteering .container .content .roles li {
+  color: #2e4c6d;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.volunteering .wave {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  bottom: -6px;
+}
+
+.training {
+  background: #daddfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: auto;
+}
+
+.training h2 {
+  font-size: 3rem;
+  color: #2e4c6d;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.training .container .row {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.training .container .main-timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.training .container .main-timeline .timeline {
+  width: calc(50% + 58px);
+  border-top: 2px solid #2e4c6d;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+.training .container .main-timeline .timeline:before {
+  content: "";
+  background: #2e4c6d;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+}
+
+.training .container .main-timeline .timeline .timeline-content {
+  color: #2e4c6d;
+  text-align: center;
+  padding: 15px 80px 15px 10px;
+  display: block;
+  position: relative;
+}
+
+.training .container .main-timeline .timeline .timeline-content ul {
+  padding: 1rem;
+}
+
+.training .container .main-timeline .timeline .timeline-content ul li {
+  color: #2e4c6d;
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+.training .container .main-timeline .timeline .timeline-content:before {
+  content: "";
+  background: #2e4c6d;
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.training .container .main-timeline .timeline .timeline-content .timeline-year {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+}
+
+.training .container .main-timeline .timeline .timeline-content .title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.training .container .main-timeline .timeline .timeline-content .description {
+  font-size: 1.3rem;
+  color: #305e96;
+  margin: 2rem;
+}
+
+.training .container .main-timeline .timeline:nth-child(even) {
+  float: right;
+}
+
+.training .container .main-timeline .timeline:nth-child(even):before {
+  right: auto;
+  left: 0;
+}
+
+.training .container .main-timeline .timeline:nth-child(even) .timeline-content {
+  padding: 15px 10px 15px 80px;
+}
+
+.training .container .main-timeline .timeline:nth-child(even) .timeline-content:before {
+  right: auto;
+  left: 51px;
+}
+
+.training .container .main-timeline .timeline:nth-child(even) .timeline-year {
+  right: auto;
+  left: -3.5rem;
+}
+
+.skills {
+  background: #daddfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.skills h2 {
+  font-size: 3rem;
+  color: #2e4c6d;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .container .content {
+  background: #2e4c6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50rem;
+  min-height: 30rem;
+  padding: 5rem;
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+.skills .container .content .title {
+  text-align: center;
+}
+
+.skills .container .content .title h3 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #daddfc;
+}
+
+.skills .container .content .roles li {
+  color: #daddfc;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .intership .timeline {
+    gap: 15px;
+    padding: 10px;
+  }
+  .intership .timeline::after {
+    display: none;
+  }
+  .intership .timeline__content {
+    width: 100%;
+  }
+  .intership .timeline__content::after {
+    display: none;
+  }
+  .intership .timeline__content::before {
+    display: none;
+  }
+  .extracurricular .timeline {
+    margin: 20px auto;
+    padding: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .extracurricular .timeline .card {
+    position: relative;
+    width: 70rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  header .container nav.toggle {
+    height: 100vh;
+    width: 80vw;
+  }
+  header .container nav.toggle ul a {
+    font-size: 1.5rem;
+  }
+  .education {
+    /* Timeline dot  */
+  }
+  .education .timeline {
+    margin: 4rem auto;
+    padding: 4rem;
+  }
+  .education .title::before {
+    left: -9rem;
+  }
+  .experience {
+    background: #daddfc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience h2 {
+    font-size: 3rem;
+    color: #2e4c6d;
+    margin-bottom: 5rem;
+  }
+  .experience .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  .extracurricular .timeline {
+    margin: 20px auto;
+    padding: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .extracurricular .timeline .card {
+    position: relative;
+    width: 60rem;
+  }
+  .volunteering .container .content {
+    background: #daddfc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 40rem;
+    min-height: 30rem;
+    padding: 5rem;
+    margin: 2rem;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .training .container .main-timeline .timeline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  header nav.toggle {
+    top: 0;
+    right: 0%;
+    height: 100vh;
+    width: 80vw;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .about .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .extracurricular .timeline {
+    margin: 20px auto;
+    padding: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .extracurricular .timeline .card {
+    position: relative;
+    width: 42rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
